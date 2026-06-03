@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claybrain Studio</title>
+  <meta name="description" content="Claybrain is an animation and technology studio where craft meets code.">
+  <link rel="icon" type="image/png" href="static/images/favicon/favicon3.png">
+  <link rel="apple-touch-icon" href="static/images/favicon/favicon3.png">
+  <link rel="canonical" href="https://claybrain.studio">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://claybrain.studio">
+  <meta property="og:title" content="Claybrain Studio">
+  <meta property="og:description" content="Claybrain is an animation and technology studio where craft meets code.">
+  <meta property="og:image" content="https://claybrain.studio/static/images/c_logo_highres.png">
+
+  <!-- Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claybrain Studio">
+  <meta name="twitter:description" content="Claybrain is an animation and technology studio where craft meets code.">
+  <meta name="twitter:image" content="https://claybrain.studio/static/images/c_logo_highres.png">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <script src="static/js/frames.js" defer></script>
+  <script src="static/js/animation.js" defer></script>
+  <script src="static/js/ui.js" defer></script>
+</head>
+<body>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-text">Loading</div>
+  <div class="loading-bar-bg">
+    <div class="loading-bar-fill" id="loadingBarFill"></div>
+  </div>
+</div>
+
+<div id="root">
+  <div id="scrollSpacer"></div>
+
+  <div class="about-section" id="aboutSection">
+    <div class="about-inner">
+      <!-- spacer where pin will land -->
+      <div class="pin-slot" id="pinSlot"></div>
+      <div class="about-content" id="aboutContent">
+<div class="about-text">
+          <p>Claybrain is an animation and technology studio where craft meets code. We're animators who build tools, and toolmakers who animate, with years of production behind us across 2D, 3D, and stop motion. We blend AI into real workflows, develop our own IPs, and co-produce for studios and creators.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="workflows-section">
+    <div class="workflows-sticky">
+      <div class="section-image">
+        <img id="btsFrame" src="static/images/intro_v6/claybrain_intro00.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="principles-section" id="principlesSection">
+    <div class="principles-content" id="principlesContent">
+<div class="principle-row" data-principle>
+        <div class="principle-media">
+          <img src="static/images/pixels/pixel-icon-production.gif" alt="Claybrain animation" class="pixel-icon">
+        </div>
+        <div class="principle-divider"></div>
+        <div class="principle-text">
+          <h3>Built for Production</h3>
+          <p>AI tools demo well but break in production. We're animators first, we create animation and build workflows where the creator stays in control and AI serves the craft.</p>
+        </div>
+      </div>
+
+      <div class="principle-row" data-principle>
+        <div class="principle-media">
+          <img src="static/images/pixels/pixel-icon-transplant.gif" alt="Claybrain Transplant" class="pixel-icon">
+        </div>
+        <div class="principle-divider"></div>
+        <div class="principle-text">
+          <h3>Claybrain Transplant</h3>
+          <p>We plug into your existing pipeline or production and extend it with custom tools and workflows that multiply what your team can do.</p>
+        </div>
+      </div>
+
+      <div class="principle-row" data-principle>
+        <div class="principle-media">
+          <img src="static/images/pixels/pixel-icon-tools.gif" alt="Claybrain Tools" class="pixel-icon">
+        </div>
+        <div class="principle-divider"></div>
+        <div class="principle-text">
+          <h3>Claybrain Tools</h3>
+          <p>Custom pipelines, apps, and AI-assisted workflows designed to explore new and exciting ways of creating animation. <a href="mailto:demo@claybrain.studio">Get in touch for a demo.</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-section" id="contactSection">
+    <div class="contact-content">
+      <div class="contact-info">
+        <p class="contact-text">Interested in working with us, or just want to talk animation and workflows?</p>
+        <a href="mailto:hello@claybrain.studio" class="contact-link">hello<span class="contact-link-tail"></span></a> <span class="contact-emoji">✋</span>
+      </div>
+      <div class="contact-image">
+        <img src="static/images/contact.png" alt="Claybrain studio">
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <p>Claybrain Studio</p>
+      </div>
+      <div class="footer-col footer-col--center">
+        <p>Stockholm, Sweden</p>
+      </div>
+      <div class="footer-col footer-col--right">
+        <button class="credits-toggle" id="creditsToggle" aria-expanded="false">Font credits</button>
+      </div>
+    </div>
+  </footer>
+
+  <section class="credits-section" id="creditsSection" hidden>
+    <div class="credits-content">
+<ul>
+        <li>Sligoil by Ariel Martín Pérez, with the contribution of Đông Trúc Nguyễn. Distributed by velvetyne.fr.</li>
+        <li>Velvelyne by Mariel Nils, Manon Van der Borght, with the contribution of Raphaël Bastide, Benjamin Dumond. Distributed by velvetyne.fr.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- Pin floats independently for parallax -->
+<div class="pin-floating" id="pinFloating">
+  <img id="pinFrame" src="static/images/symbol_anim2/symbol_anim0.png" alt="Animation Studio">
+</div>
+
+<div id="aboutTracker"></div>
+<div id="principlesTracker"></div>
+
+<div class="fixed-layer" id="fixedLayer">
+  <div class="logo-area" id="logoArea">
+    <img src="static/images/c_logo_highres.png" alt="Claybrain logo">
+  </div>
+  <div class="frame-area tint-image">
+    <img id="frameImage" src="" alt="">
+  </div>
+  <div class="tagline-divider" id="taglineDivider"></div>
+  <div class="tagline-area tagline-area--bottom" id="taglineAreaBottom">
+    <p></p>
+    <p><span class="tagline-bg" id="taglineBg">
+        Where <span class="tagline-craft color-alt-1">craft</span> meets <span class="tagline-code color-alt-2">&lt;code&gt;</span>
+    </span></p>
+  </div>
+</div>
+
+<div class="scroll-hint" id="scrollHint">
+  <span>Scroll</span>
+  <div class="arrow"><span>↓</span></div>
+</div>
+
+<span id="btsProgressNote">"The Odd Birds Show" production images developed in collaboration with <a href="https://www.asteriafilm.com/" target="_blank" rel="noopener">Asteria Film</a></span>
+<div class="bts-progress" id="btsProgress">
+  <span id="btsProgressText"></span>
+</div>
+
+</body>
+</html>
