@@ -276,6 +276,7 @@ body {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
+  pointer-events: all;
 }
 
 .scroll-hint .arrow {
