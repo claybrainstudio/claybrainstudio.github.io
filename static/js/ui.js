@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = workflowsSection.getBoundingClientRect();
             const imgRect = btsFrame.getBoundingClientRect();
             const vh = window.innerHeight;
+            if (imgRect.height === 0) return;
             const centering = Math.max(0, (vh - imgRect.height) / 2);
             // When image fits viewport: scrub while fully visible.
             // When image fills/exceeds viewport: fall back to section-pin trigger.
